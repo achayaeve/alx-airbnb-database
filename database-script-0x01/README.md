@@ -1,4 +1,4 @@
-UUID is used for all primary keys as requested.
+UUID is used for all primary keys.
 
 VARCHAR lengths are set to 255, which is standard for names, emails, and locations.
 
