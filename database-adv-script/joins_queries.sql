@@ -24,5 +24,21 @@ SELECT
 FROM 
     Property
 LEFT JOIN 
-    Review ON Property.property_id = Review.property_id;
+    Review ON Property.property_id = Review.property_id
+;
+
+SELECT 
+    User.user_id,
+    User.first_name,
+    User.last_name
+    Booking.booking_id,
+    Bookingstart_date
+    Booking.end_date
+FROM 
+    User
+FULL OUTER JOIN 
+    Booking ON User.user_id = Booking.user_id
+;
+
+
 
