@@ -26,3 +26,7 @@ Result:
 Users without bookings will have NULL in booking columns.
 
 Bookings without linked users will have NULL in user columns.
+
+4.Finding properties with an average rating greater than 4.0 using a subquery.
+
+5.Finding users who have made more than 3 bookings using a correlated subquery.
