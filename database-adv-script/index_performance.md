@@ -4,7 +4,8 @@ SELECT u.user_id, u.name
 FROM User u
 JOIN Booking b ON u.user_id = b.user_id
 WHERE b.start_date > '2025-01-01';
-
+'''
+'''sql 
 ANALYZE
 SELECT u.user_id, u.name
 FROM User u
