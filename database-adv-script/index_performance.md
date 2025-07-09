@@ -1,4 +1,6 @@
-``` sql Bookings table: Index on user_id for joins and filtering by user
+``` sql
+Bookings table: Index on user_id for joins and filtering by user
+
 CREATE INDEX idx_bookings_user_id ON Booking(user_id);
 
 -- Bookings table: Index on property_id for joins and filtering by property
