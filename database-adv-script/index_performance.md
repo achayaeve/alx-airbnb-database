@@ -1,18 +1,16 @@
 '''sql 
 #Before Indexing
-SELECT u.user_id, u.name
+SELECT u.user_id,u.name
 FROM User u
 JOIN Booking b ON u.user_id = b.user_id
 WHERE b.start_date > '2025-01-01';
-'''
-'''sql 
+
 ANALYZE
 SELECT u.user_id, u.name
 FROM User u
 JOIN Booking b ON u.user_id = b.user_id
 WHERE b.start_date > '2025-01-01';
-'''
-``` sql
+
 #Bookings table: Index on user_id for joins and filtering by user
 
 CREATE INDEX idx_bookings_user_id ON Booking(user_id);
