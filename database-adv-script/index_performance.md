@@ -1,5 +1,5 @@
  ```sql
-#Before Indexing
+#Measure the query performance before adding indexes 
 EXPLAIN ANALYZE
 SELECT u.user_id,u.name
 FROM User u
@@ -13,7 +13,7 @@ CREATE INDEX idx_bookings_property_id ON Booking(Property_id);
 
 CREATE INDEX idx_bookings_date_range ON Booking(start_date, end_date);
  
-#After indexing
+#Measure the query performance after adding indexes 
 EXPLAIN ANALYZE
 SELECT u.user_id, u.name
 FROM User u
