@@ -12,7 +12,6 @@ CREATE INDEX idx_bookings_date_range ON Booking(start_date, end_date);
 '''
 
 '''sql #Before Indexing
-ANALYZE
 SELECT u.user_id, u.name
 FROM User u
 JOIN Booking b ON u.user_id = b.user_id
