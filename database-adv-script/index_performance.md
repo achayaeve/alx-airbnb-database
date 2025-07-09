@@ -8,4 +8,6 @@
 
 #Bookings table: index on booking_date if queries filter or order by date
 
-  CREATE INDEX idx_bookings_booking_date ON Booking(booking_date);
+  CREATE INDEX idx_bookings_start_date ON Booking(start_date);
+
+  CREATE INDEX idx_bookings_end_date ON Booking(end_date);
