@@ -1,11 +1,8 @@
-#Bookings table: index on user_id for joins and filtering by user
+-- Bookings table: Index on user_id for joins and filtering by user
+CREATE INDEX idx_bookings_user_id ON Bookings(user_id);
 
-   CREATE INDEX idx_bookings_user_id ON Booking(user_id);
+-- Bookings table: Index on property_id for joins and filtering by property
+CREATE INDEX idx_bookings_property_id ON Bookings(property_id);
 
-#Bookings table: index on property_id for joins and filtering by property
-
-  CREATE INDEX idx_bookings_property_id ON Booking(property_id);
-
-#Bookings table: index on booking_date if queries filter or order by date
-
-  CREATE INDEX idx_bookings_booking_date ON Booking(start_date, end_date);
+-- Bookings table: Composite index on start_date and end_date for queries filtering or ordering by booking date range
+CREATE INDEX idx_bookings_date_range ON Bookings(start_date, end_date);
